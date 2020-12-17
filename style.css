@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #29b6d1;
+}
+
+.row::after {
+   content: "";
+   clear: both;
+   display: table;
+}
+
+/* CLASSES DE TODAS AS COLUNAS */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* TODAS COLUNAS (col-1, col-2, col-3...) */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*border: 1px solid black;*/
+}
+
+.boxStyle {
+    border: 3px solid black;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #29b6d1 0%, gray 100%);
+    margin-top: 25vh;
+
+    /*height: 50vh;*/
+}
+
+.styleLogin {
+    width: 25%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+    padding: 10px 50px 10px 50px;
+    margin: 10px auto;
+    
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: aqua;
+    
+    outline: none;
+    transition: background-color .2s;
+}
+
+.styleLogin:hover {
+    background-color: aquamarine;
+}
+
+.styleInput {
+    outline: none;
+    border: 3px solid black;   
+    padding: 12px;
+    margin: 10px 0 10px 0;
+
+    width: 100%;
+}
