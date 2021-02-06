@@ -72,3 +72,10 @@ body {
 
     width: 100%;
 }
+
+.msg{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25pt;
+    color: blue;
+}
